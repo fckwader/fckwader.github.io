@@ -1,0 +1,80 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+.header{
+    position: fixed;
+}
+
+.header img{
+    width: 600px;
+}
+
+.images{
+    padding-top: 200px;
+}
+
+.text{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 32px;
+    border: 2px solid black;
+    width: 400px;
+    aspect-ratio: 1;
+    background: white;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+.penis{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5000px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.25s;
+    padding: 0;
+    transform: rotate(45deg);
+}
+
+.balala{
+    transform: rotate(0deg);
+}
+
+.fhidden{
+    border: none;
+    background: none;
+}
+
+.rhidden{
+    display: none;
+}
+
+.FUCK{
+    width: 80%;
+    font-size: 12px;
+}
+
+.SHIT{
+    width: 100% !important;
+    background: blue;
+}
+
+@media (max-width: 600px) {
+    .images img{
+        width: 100vw;
+    }
+}
+
