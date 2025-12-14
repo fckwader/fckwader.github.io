@@ -1,27 +1,16 @@
 const debug = false;
-
-const count = 6;
+// ALWAYS UPDATE THE COUNT
+const count = 10;
 
 const getNames = async () => {
-    return Array.from(Array(count).keys()).map(e => + e + ".png");
-    if(debug){
-        return ["0.png"];
-    }
-    const res = await fetch("images/");
-    const text = await res.text();
-
-    let div = document.createElement("div");
-    div.innerHTML = text;
-
-    const links = [...div.querySelectorAll("a")];
-
-    return links.map(l => l.innerHTML).filter(l => l.endsWith(".png"));
+    return Array.from(Array(count).keys()).map(e => + e + ".png").reverse();
 
 }
 
 getNames().then(names => {
     const images = document.querySelector(".images");
     names.forEach(n => {
+        print(n)
         const img = document.createElement("img");
         img.src = `images/${n}`;
         images.append(img);
