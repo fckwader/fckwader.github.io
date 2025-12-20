@@ -1,6 +1,6 @@
 const debug = false;
 // ALWAYS UPDATE THE COUNT
-const count = 10;
+const count = 12;
 
 const getNames = async () => {
     return Array.from(Array(count).keys()).map(e => + e + ".png").reverse();
@@ -10,7 +10,6 @@ const getNames = async () => {
 getNames().then(names => {
     const images = document.querySelector(".images");
     names.forEach(n => {
-        print(n)
         const img = document.createElement("img");
         img.src = `images/${n}`;
         images.append(img);
