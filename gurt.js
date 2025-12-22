@@ -28,5 +28,5 @@ if(window.innerWidth < 600){
     document.querySelector(".header img").classList.add("SHIT");
     Array.from(document.querySelectorAll(".images img")).forEach(p => {
         p.classList.add("WILLY");
-    })
+    });
 }
